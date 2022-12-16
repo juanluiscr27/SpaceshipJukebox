@@ -18,6 +18,25 @@ First, write a set of requirements to design the jukebox. Try to come up with at
 and three non-functional requirements. Use the attributes of FURPS+ to inspire possible requirements.
 
 ## Requirements
+**Functional Requirements:**
+- The system must maintain a music library of albums and songs. 
+- The system must allow users to browse those albums and songs
+- The system must allow users to select individual songs, and preventing them from playing full albums. 
+- The system must maintain a queue of songs to play.
+- The jukebox needs to actually play music. 
+- The system must allow the user to sort by artists.
+- The jukebox should identify individual users.
+- The system must track the number of plays per user.
+
+**Non-Functional Requirements**
+*Usability:*
+- The system should be intuitive to use while the astronauts are floating around in space.
+*Reliability:* 
+- The jukebox need to be available for them all day, every day, 24/7.
+*Performance:*
+- The system to be low-power. 
+*Supportability:* 
+- The jukebox should have an updatable music library. 
 
 ## Use Case and User Stories
 
