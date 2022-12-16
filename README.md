@@ -29,16 +29,60 @@ and three non-functional requirements. Use the attributes of FURPS+ to inspire p
 - The system must track the number of plays per user.
 
 **Non-Functional Requirements**
+
 *Usability:*
 - The system should be intuitive to use while the astronauts are floating around in space.
+
 *Reliability:* 
 - The jukebox need to be available for them all day, every day, 24/7.
+
 *Performance:*
-- The system to be low-power. 
+- The system to be low-power.
+
 *Supportability:* 
 - The jukebox should have an updatable music library. 
 
 ## Use Case and User Stories
+
+### Use cases scenario for selecting a song to play
+
+---
+**Title:** Play a Song
+
+**Primary Actor:** User
+
+**Success Scenario:** The system identifies the user. The user browses the library of available 
+albums. The user selects an album and browse the list of songs on the selected album. Finally, the user 
+selects a song. The system plays selected song.
+
+### Use cases scenario for selecting multiple songs to play
+
+---
+**Title:** Select Multiple Songs
+
+**Primary Actor:** User
+
+**Success Scenario:**
+1. System identifies the user. 
+2. User browses the library of available albums. 
+3. User selects an album and browse the list of songs on the selected album.
+4. User selects a song. 
+5. System begins playing selected song.
+6. User continues browsing and selects a second song.
+7. System adds that second song to a play queue.
+8. System plays the second song after the first song is over.
+
+### User stories
+
+---
+- As a user, I want my song to be added to the front of the long play queue, so that I don't have to 
+wait hours to hear it.
+- As a user, I want to be identified without having to touch anything, so that I can use my hands to 
+do other things.
+- As a user, I want to sort and browse songs by artist, so that I can listen to every song of my
+favorite artists.
+- As the spaceship's commander, I want the ability to cancel other users' selections, so that I don't 
+have to listen to other user section if I don't want.
 
 ## Domain Modeling
 
