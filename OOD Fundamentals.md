@@ -12,14 +12,16 @@ the many popular object-oriented programming languages, such as Java, C#, Ruby, 
 
 Here it introduces to the following concepts and terms:
 
-Object-oriented basics: objects, classes, properties and methods
-Encapsulation
-Inheritance
-Defining requirements
-Identifying use cases, actors, and scenarios
-Domain modeling
-Identifying class responsibilities and relationships
-Creating class diagrams
-Using abstract classes
-Working with inheritance
-Developing software with object-oriented design principles
+* Object-oriented basics: objects, classes, properties and methods
+* Encapsulation
+* Inheritance
+* Defining requirements
+* Identifying use cases, actors, and scenarios
+* Domain modeling
+* Identifying class responsibilities and relationships
+* Creating class diagrams
+* Using abstract classes
+* Working with inheritance
+* Developing software with object-oriented design principles
+
+## Objects
