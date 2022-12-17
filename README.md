@@ -51,9 +51,9 @@ and three non-functional requirements. Use the attributes of FURPS+ to inspire p
 
 **Primary Actor:** User
 
-**Success Scenario:** The *system* <u>identifies</u> the *user*. The user <u>browses</u> the *library* 
-of available *albums*. The user <u>selects</u> an album and <u>browse</u> the *list* of *songs* on the 
-selected album. Finally, the user <u>selects</u> a song. The system <u>plays</u> selected song.
+**Success Scenario:** The *system* <u>identifies the *user*</u>. The user <u>browses the *library*</u> 
+of available *albums*. The user <u>selects an album</u> and <u>browse the *list* of *songs*</u> on the 
+selected album. Finally, the user <u>selects a song</u>. The system <u>plays selected song</u>.
 
 ### Use cases scenario for selecting multiple songs to play
 
@@ -63,14 +63,14 @@ selected album. Finally, the user <u>selects</u> a song. The system <u>plays</u>
 **Primary Actor:** User
 
 **Success Scenario:**
-1. *System* identifies the *user*. 
-2. User browses the *library* of available *albums*. 
-3. User selects an album and browse the *list* of *songs* on the selected album.
-4. User selects a song. 
-5. System begins playing selected song.
-6. User continues browsing and selects a second song.
-7. System adds that second song to a play *queue*.
-8. System plays the second song after the first song is over.
+1. *System* <u>identifies the *user*</u>. 
+2. User <u>browses the *library*</u>of available *albums*. 
+3. User <u>selects an album</u> and <u>browse the *list* of *songs*</u> on the selected album.
+4. User <u>selects a song</u>. 
+5. System begins <u>playing selected song</u>.
+6. User <u>continues browsing</u> and <u>selects a second song</u>.
+7. System <u>adds that second song to a play *queue*</u>.
+8. System <u>plays the second song</u> after the first song is over.
 
 ### User stories
 
@@ -81,8 +81,8 @@ have to wait hours to hear it.
 do other things.
 - As a user, I want to sort and browse songs by *artist*, so that I can listen to every song of my
 favorite artists.
-- As the spaceship's *commander*, I want the *ability* to cancel other users *selections*, so that I 
-don't have to listen to other user selection if I don't want.
+- As the spaceship's *commander*, I want the *ability* to <u>cancel other users *selections*</u>, so 
+that I don't have to listen to other user selection if I don't want.
 
 ## Domain Modeling
 Here we list all nouns from the Use Cases and User Stories to determine the possible objects:
@@ -95,6 +95,24 @@ queue.
 3. We need to remove the noun ability because it refers more to a behavior than as an object.
 4. It would be better if change the term Commander to Admin to describe better the role.
 
+Now, we are going look for the responsibilities of those objects. For that purpose we need to pick verbs
+phrases on the Use Cases and User Stories:
+
+* Identifies the user 
+* Browses the library 
+* Selects an album 
+* Browse the list of songs 
+* Selects a song 
+* Plays selected song 
+* ~~Continues browsing~~ 
+* ~~Selects a second song~~ 
+* Adds that second song to a play queue 
+* Plays the second song
+* Cancel other users selections
+
+1. Here we discard the verb phrase *"Continues browsing"* as it is repeating a behaviour that was 
+captured in a previous verb phrase *"Browse library"*.
+2. Same for the phrase *"Select a second song"* which is te same behaviour as *"Selects a song"*.
 
 ### Jukebox Conceptual Model
 
