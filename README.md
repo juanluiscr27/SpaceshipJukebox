@@ -85,15 +85,20 @@ favorite artists.
 that I don't have to listen to other user selection if I don't want.
 
 ## Domain Modeling
+**Class**
+
 Here we list all nouns from the Use Cases and User Stories to determine the possible objects:
 
-~~System~~ - User - Library - Album - List - Song - Queue - ~~Commander~~ => Admin - ~~Ability~~ - ~~Selection~~ 
+~~System~~ - User - Library - Album - ~~List~~ - Song - Queue - ~~Commander~~ => Admin - ~~Ability~~ - ~~Selection~~ 
 
 1. We discard the noun system because we do not want to have a god object in our program.
-2. We also remove Selection from the list because its meaning was previously captured by the song in 
+2. We can omit the word list which is previously represented by list of song in album.
+3. We also remove Selection from the list because its meaning was previously captured by the song in 
 queue.
-3. We need to remove the noun ability because it refers more to a behavior than as an object.
-4. It would be better if change the term Commander to Admin to describe better the role.
+4. We need to remove the noun ability because it refers more to a behavior than as an object.
+5. It would be better if change the term Commander to Admin to describe better the role.
+
+**Responsibilities**
 
 Now, we are going look for the responsibilities of those objects. For that purpose we need to pick verbs
 phrases on the Use Cases and User Stories:
@@ -115,7 +120,9 @@ captured in a previous verb phrase *"Browse library"*.
 2. Same for the phrase *"Select a second song"* which is te same behaviour as *"Selects a song"*.
 
 ### Jukebox Conceptual Model
+Following is the Conceptual Model Diagram which lists all the objects and their relationships.
 
+[![Jukebox Conceptual Model](assets/conceptual-model-diagram.jpg)](assets/conceptual-model-diagram.jpg)
 
 ## Class Diagrams
 
