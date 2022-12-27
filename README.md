@@ -131,5 +131,17 @@ Next is the Class Diagram based on the objects and responsibilities identified i
 [![Jukebox Class Diagrams](assets/class-diagrams.jpg)](assets/class-diagrams.jpg)
 
 ## Class Relationships
+Looking at the class diagrams we have identified the following relationships bases on their attributes
+or methods.
+- In the *User* class and the *Admin* class both have an `id` attribute and `getId()` method give a hint 
+that this must be an opportunity for **inheritance**. As all *Admin* can be *User*, but not all *User* are 
+*Admin*, the inheritance relationship goes this way, *"Admin is a User"*. Because an *Admin* is a type of 
+*User* with extra capabilities. *User* can act as a super class where *Admin* can inherit from.
+- On the other hand, the *Library* and *Album* classes share the common characteristic they represent a 
+collection of items. This is useful because it suggests an *aggregation* relationship. The *Library* is 
+an aggregation of one or more *Albums*, while the *Album* is an aggregation of one or more *Songs*.
+- In the same way, as *"Queue has Songs"*, this relationship suggests another aggregation. The *Queue* 
+class represents a collection of *Songs*, with particular detail that can be empty. Then we can model
+this as *Queue* is an aggregation of zero or more *Songs*.
 
 [![Jukebox Class Relationships Diagram](assets/class-relationships-diagram.jpg)](assets/class-relationships-diagram.jpg)
