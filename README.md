@@ -89,7 +89,8 @@ that I don't have to listen to other user selection if I don't want.
 
 Here we list all nouns from the Use Cases and User Stories to determine the possible objects:
 
-~~System~~ - User - Library - Album - ~~List~~ - Song - Queue - ~~Commander~~ => Admin - ~~Ability~~ - ~~Selection~~ 
+~~System~~ - User - Library - Album - ~~List~~ - Song - Queue - ~~Commander~~ => Admin - ~~Ability~~ - 
+~~Selection~~ 
 
 1. We discard the noun system because we do not want to have a god object in our program.
 2. We can omit the word list which is previously represented by list of song in album.
@@ -131,4 +132,4 @@ Next is the Class Diagram based on the objects and responsibilities identified i
 
 ## Class Relationships
 
-
+[![Jukebox Class Relationships Diagram](assets/class-relationships-diagram.jpg)](assets/class-relationships-diagram.jpg)
