@@ -125,6 +125,9 @@ Following is the Conceptual Model Diagram which lists all the objects and their 
 [![Jukebox Conceptual Model](assets/conceptual-model-diagram.jpg)](assets/conceptual-model-diagram.jpg)
 
 ## Class Diagrams
+Next is the Class Diagram based on the objects and responsibilities identified in the Conceptual Model.
+
+[![Jukebox Class Diagrams](assets/class-diagrams.jpg)](assets/class-diagrams.jpg)
 
 ## Class Relationships
 
