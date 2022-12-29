@@ -18,7 +18,6 @@ public class Album {
     }
 
     public Song getSongs(String title) {
-        // TODO: Select a song using the title
-        return songs[0];
+        return songs.get(title);
     }
 }
