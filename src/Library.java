@@ -16,7 +16,7 @@ public class Library {
         return titles;
     }
 
-    public Album getAlbum() {
+    public Album getAlbum(String title) {
         // TODO: Select album based on the title
         return albums[0];
     }
