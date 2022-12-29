@@ -9,7 +9,7 @@ public class Song {
 
     @Override
     public String toString() {
-        return "Song(" + this.title + " - " + this.artist +")";
+        return "Song(" + title + " - " + artist +")";
     }
 
     public String getTitle() {
@@ -21,6 +21,6 @@ public class Song {
     }
 
     public void play() {
-        System.out.println("The song " + this.title + " from " + this.artist + " is now playing...");
+        System.out.println("The song " + title + " from " + artist + " is now playing...");
     }
 }
