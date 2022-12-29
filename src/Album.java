@@ -11,12 +11,12 @@ public class Album {
         for (Song song: songs) {
             this.songs.put(song.getTitle(), song);
         }
-        this.titles = this.songs.keySet().toArray(new String[0]);
+        titles = this.songs.keySet().toArray(new String[0]);
     }
 
     @Override
     public String toString() {
-        return "Album("+ this.name + ")";
+        return "Album("+ name + ")";
     }
     public String getName() {
         return name;
