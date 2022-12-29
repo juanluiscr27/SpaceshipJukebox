@@ -7,6 +7,11 @@ public class Song {
         this.artist = artist;
     }
 
+    @Override
+    public String toString() {
+        return "Song(" + this.title + " - " + this.artist +")";
+    }
+
     public String getTitle() {
         return title;
     }

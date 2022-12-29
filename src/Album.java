@@ -17,7 +17,7 @@ public class Album {
         return titles;
     }
 
-    public Song getSongs(String title) {
+    public Song getSong(String title) {
         return songs.get(title);
     }
 }
