@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Library {
-    private String[] titles;
+    private final String[] titles;
     private final Map<String, Album> albums;
     public Library(Album ... albums) {
         this.albums = new HashMap<>();
@@ -10,6 +10,7 @@ public class Library {
         }
         this.titles = this.albums.keySet().toArray(new String[0]);
     }
+
     public String[] getTitles() {
         return titles;
     }

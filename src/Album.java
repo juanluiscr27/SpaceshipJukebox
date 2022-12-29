@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Album {
     private final String name;
-    private String[] titles;
+    private final String[] titles;
     private final Map<String, Song> songs;
     public Album(String name, Song ... songs) {
         this.name = name;
@@ -18,7 +18,6 @@ public class Album {
     public String toString() {
         return "Album("+ this.name + ")";
     }
-
     public String getName() {
         return name;
     }

@@ -11,10 +11,23 @@ public class Main {
         Song s6 = new Song("After Hours", "The Weeknd");
         Album a2 = new Album("After Hours", s4, s5, s6);
 
-        String[] titles = a1.getTitles();
-        System.out.println("Album: " + a1.getName());
-        for (String title : titles) {
+        Library library = new Library(a1, a2);
+
+        String[] a1Titles = a1.getTitles();
+        System.out.println(a1);
+        for (String title : a1Titles) {
             System.out.println(" * " + a1.getSong(title));
+        }
+
+        String[] a2Titles = a2.getTitles();
+        System.out.println(a2);
+        for (String title : a2Titles) {
+            System.out.println(" * " + a2.getSong(title));
+        }
+
+        System.out.println("Library: ");
+        for (String title : library.getTitles()) {
+            System.out.println(" * " + title);
         }
     }
 }
