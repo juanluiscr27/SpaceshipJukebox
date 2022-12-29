@@ -1,9 +1,15 @@
+import java.util.*;
+
 public class Library {
     private String[] titles;
-    private final Album[] albums;
-    public Library(Album[] albums) {
-        this.albums = albums;
-        // TODO: Generate a list of title base on the albums
+    private final Map<String, Album> albums;
+    public Library(Album ... albums) {
+        this.albums = new HashMap<>();
+        for (Album album : albums) {
+            this.albums.put(album.getName(), album);
+        }
+        this.titles = new String[this.albums.size()];
+        this.titles = this.albums.keySet().toArray(new String[0]);
     }
 
     public String[] getTitles() {
