@@ -8,14 +8,11 @@ public class Library {
         for (Album album : albums) {
             this.albums.put(album.getName(), album);
         }
-        this.titles = new String[this.albums.size()];
         this.titles = this.albums.keySet().toArray(new String[0]);
     }
-
     public String[] getTitles() {
         return titles;
     }
-
     public Album getAlbum(String title) {
         return albums.get(title);
     }

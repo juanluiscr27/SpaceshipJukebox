@@ -1,3 +1,4 @@
+import java.sql.*;
 import java.util.*;
 
 public class Album {
@@ -10,8 +11,7 @@ public class Album {
         for (Song song: songs) {
             this.songs.put(song.getTitle(), song);
         }
-        this.titles = new String[this.songs.size()];
-        this.titles = this.songs.keySet().toArray(this.titles);
+        this.titles = this.songs.keySet().toArray(new String[0]);
     }
 
     @Override
