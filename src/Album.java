@@ -1,17 +1,23 @@
+import java.util.*;
+
 public class Album {
     private String[] titles;
-    private Song[] songs;
+    private final Map<String, Song> songs;
 
-    public Album(Song[] songs) {
-        this.songs = songs;
-        // TODO: Generate the titles list based on the songs
+    public Album(Song... songs) {
+        this.songs = new HashMap<>();
+        for (Song song: songs) {
+            this.songs.put(song.getTitle(), song);
+        }
+        this.titles = new String[this.songs.size()];
+        this.titles = this.songs.keySet().toArray(this.titles);
     }
 
     public String[] getTitles() {
         return titles;
     }
 
-    public Song getSongs() {
+    public Song getSongs(String title) {
         // TODO: Select a song using the title
         return songs[0];
     }
