@@ -8,7 +8,7 @@ public class Library {
         for (Album album : albums) {
             this.albums.put(album.getName(), album);
         }
-        this.titles = this.albums.keySet().toArray(new String[0]);
+        titles = this.albums.keySet().toArray(new String[0]);
     }
 
     public String[] getTitles() {
